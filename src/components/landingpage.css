@@ -1,0 +1,22 @@
+/* styled landingpage */
+
+@media screen and (max-width: 1024px) {
+    
+}
+.video-bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* @media screen and (min-width: 648px ) {
+    .video-bg {
+        width: 50%;
+        height: 50vh;
+        position: absolute;
+        z-index: -1;
+        object-fit: cover;
+    }
+} */
