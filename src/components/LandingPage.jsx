@@ -22,48 +22,59 @@ function LandingPage() {
           class="video-bg"
         />
 
-        <div className="absolute flex flex-col gap-5 text-white  px-[6rem] mt-[15rem] ">
-          <img src={logoJivaloka} className="flex w-[15rem] content-center" />
+        <div className="absolute flex flex-col lg:gap-5 xs:gap-1 text-white  lg:px-[6rem] xs:px-[2rem] lg:top-[15rem] md:top-[8rem] xs:top-[1rem]">
+          <img
+            src={logoJivaloka}
+            className="flex lg:w-[15rem] md:w-[8rem] xs:w-[5rem] content-center"
+          />
 
-          <span className="font-semibold text-lg">
-            Twin world developers created <br /> immersive virtual environtment
-            for <br />
-            socializing, gaming, and commerce <br /> specialize in niche or
-            unique virtual <br /> space
+          <span className="font-semibold lg:text-lg md:text-sm xs:text-xs lg:w-[20rem] md:w-[10rem] xs:w-[10rem]">
+            Twin world developers created immersive virtual environtment for
+            socializing, gaming, and commerce specialize in niche or unique
+            virtual space
           </span>
 
           <button
             type="button"
-            className="text-2xl font-archivo border-2 w-[10rem] border-white rounded-md m-2"
+            className="lg:text-2xl xs:text-sm font-archivo border-2 lg:w-[10rem] xs:w-[5rem] border-white rounded-md m-2"
           >
             contact
           </button>
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-[120vh] gap-[3rem]">
-        <h2 className="font-semibold text-2xl">Our Partner</h2>
+      <div className="flex flex-col items-center justify-center lg:py-[8rem] xs:py-[2rem] gap-[3rem] w-full h-full">
+        <h2 className="font-semibold lg:text-2xl xs:text-lg">Our Partner</h2>
 
-        <div className="flex flex-row items-center justify-center gap-5">
-          <img src={cyberMantra} />
+        <div className="flex lg:flex-row xs:flex-col w-full h-full items-center justify-center gap-5 ">
+          <img
+            src={cyberMantra}
+            className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]"
+          />
 
-          <img src={ue1} />
+          <img src={ue1} className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]" />
 
-          <img src={katVr} />
+          <img src={katVr} className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]" />
 
-          <img src={mejik1} />
+          <img
+            src={mejik1}
+            className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]"
+          />
         </div>
       </div>
 
-      <div className="flex flex-col items-center mt-[20vh] py-12 bg-[#232323] text-white">
+      <div className="flex flex-col  w-full h-full items-center  py-12 bg-[#232323] text-white">
         <div className="flex flex-col items-center py-16 gap-5">
-          <img src={logoJivaloka} />
-          <p>
-            contact:<span>mail.jivaloka.digital</span>
+          <img src={logoJivaloka} className="lg:w-[15rem] xs:w-[10rem]" />
+          <p className="lg:text-base xs:text-xs">
+            contact:
+            <span className="lg:text-base xs:text-xs">
+              mail.jivaloka.digital
+            </span>
           </p>
         </div>
 
-        <p className="text-lg text-[#979797]">
+        <p className="lg:text-lg xs:text-sm text-[#979797]">
           ©Copyright © 2023 Jivaloka.All rights reserved.
         </p>
       </div>

@@ -5,7 +5,7 @@ import LandingPage from "./components/LandingPage";
 
 function App() {
   return (
-    <div>
+    <div className="min-w-[100vw] min-h-full">
       <LandingPage />
     </div>
   );
