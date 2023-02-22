@@ -43,28 +43,27 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center lg:py-[8rem] xs:py-[2rem] gap-[3rem] w-full h-full">
-        <h2 className="font-semibold lg:text-2xl xs:text-lg">Our Partner</h2>
+      <div className="flex flex-col items-center justify-center lg:py-[8rem] xs:py-[3rem] lg:gap-[3rem] xs:gap-[1rem] w-full h-full">
+        <h2 className="font-semibold lg:text-2xl md:text-lg xs:text-sm">
+          Our Partner
+        </h2>
 
-        <div className="flex lg:flex-row xs:flex-col w-full h-full items-center justify-center gap-5 ">
+        <div className="flex lg:flex-row xs:flex-wrap w-full h-full items-center justify-center gap-5 ">
           <img
             src={cyberMantra}
-            className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]"
+            className="lg:w-[20rem] xs:w-[5em] md:w-[10rem]"
           />
 
-          <img src={ue1} className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]" />
+          <img src={ue1} className="lg:w-[20rem] xs:w-[5rem] md:w-[10rem]" />
 
-          <img src={katVr} className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]" />
+          <img src={katVr} className="lg:w-[20rem] xs:w-[5rem] md:w-[10rem]" />
 
-          <img
-            src={mejik1}
-            className="lg:w-[20rem] xs:w-[15rem] md:w-[15rem]"
-          />
+          <img src={mejik1} className="lg:w-[20rem] xs:w-[5rem] md:w-[10rem]" />
         </div>
       </div>
 
-      <div className="flex flex-col  w-full h-full items-center  py-12 bg-[#232323] text-white">
-        <div className="flex flex-col items-center py-16 gap-5">
+      <div className="flex flex-col  w-full h-full items-center  lg:py-12 xs:py-5 bg-[#232323] text-white">
+        <div className="flex flex-col items-center lg:py-16 xs:py-8 gap-5">
           <img src={logoJivaloka} className="lg:w-[15rem] xs:w-[10rem]" />
           <p className="lg:text-base xs:text-xs">
             contact:
