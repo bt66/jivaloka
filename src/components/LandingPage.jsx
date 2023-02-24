@@ -9,6 +9,10 @@ import ue1 from "../assets/image/ue.svg";
 import katVr from "../assets/image/katvr.svg";
 import mejik1 from "../assets/image/mejik.svg";
 
+// icons
+import { RiWhatsappLine } from "react-icons/ri";
+import { MdOutlineEmail } from "react-icons/md";
+
 function LandingPage() {
   return (
     <div className="flex flex-col w-[100vw] h-auto min-h-[100vh]">
@@ -48,7 +52,7 @@ function LandingPage() {
           Our Partner
         </h2>
 
-        <div className="flex lg:flex-row xs:flex-wrap w-full h-full items-center justify-center lg:gap-5 xs:gap-2 ">
+        <div className="flex lg:flex-row xs:flex-wrap w-full h-full items-center justify-center lg:gap-5 xs:gap-3 ">
           <img
             src={cyberMantra}
             className="lg:w-[20rem] xs:w-[6.5rem] md:w-[10rem]"
@@ -68,18 +72,33 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="flex flex-col  w-full h-full items-center  lg:py-12 xs:py-5 bg-[#232323] text-white">
+      <div className="flex flex-col w-full h-full items-center lg:py-12 xs:py-5 bg-[#232323] text-white">
         <div className="flex flex-col items-center lg:py-16 xs:py-10 gap-5">
-          <img src={logoJivaloka} className="lg:w-[15rem] xs:w-[10rem]" />
-          <p className="lg:text-base xs:text-xs">
+          <img src={logoJivaloka} className="lg:w-[15rem] xs:w-[7rem]" />
+          {/* <p className="lg:text-base xs:text-xs">
             contact:
             <span className="lg:text-base xs:text-xs">
               mail.jivaloka.digital
             </span>
-          </p>
+          </p> */}
+          <div className="flex flex-col items-center gap-2">
+            <p className="lg:text-base xs:text-xs">Contact: </p>
+
+            {/* <div className="flex items-center gap-2">
+              <MdOutlineEmail className="text-white lg:text-2xl xs:text-lg" />
+              <span className="lg:text-base xs:text-xs">
+                mail.jivaloka.digital
+              </span>
+            </div> */}
+
+            <div className="flex items-center lg:gap-3 xs:gap-1">
+              <RiWhatsappLine className="text-white lg:text-2xl xs:text-lg" />
+              <span className="lg:text-base xs:text-xs">+62 821-3485-2429</span>
+            </div>
+          </div>
         </div>
 
-        <p className="lg:text-lg xs:text-sm text-[#979797]">
+        <p className="lg:text-lg xs:text-xs text-[#979797]">
           ©Copyright © 2023 Jivaloka.All rights reserved.
         </p>
       </div>
