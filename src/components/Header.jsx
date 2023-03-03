@@ -8,74 +8,85 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-50 w-screen p-3 px-8 md:p-6 md:px-16 bg-white">
+    <header className="fixed z-50 md:p-5 xs:p-2 w-[100vw] items-center text-white">
       {/* destop & table */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
-        <div className="flex items-center gap-8">
+        <div className="flex w-full items-center justify-center gap-8">
           <motion.ul
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className="flex items-center gap-8"
+            className="flex items-center gap-16"
           >
             <li
-              className="text-base text-textColor hover:text-headingColor duration-100 
+              className="text-base duration-100 hover:font-semibold
                     transition-all ease-in-out cursor-pointer"
             >
               About
             </li>
             <li
-              className="text-base text-textColor hover:text-headingColor duration-100 
+              className="text-base duration-100 hover:font-semibold
                     transition-all ease-in-out cursor-pointer"
             >
               Content
             </li>
             <li
-              className="text-base text-textColor hover:text-headingColor duration-100 
+              className="text-base duration-100 hover:font-semibold
                     transition-all ease-in-out cursor-pointer"
             >
               Prodact
             </li>
-            <button>Download Demo</button>
+            <button className="absolute right-[4rem] font-archivo border-2 w-[10rem] h-[2.5rem] border-white rounded-md">
+              Download Demo
+            </button>
           </motion.ul>
         </div>
       </div>
 
       {/* mobile */}
-      <div className="flex md:hidden xs:bg items-center justify-between w-full h-full">
-        <div className="relative w-full">
+      <div className="flex md:hidden items-center justify-between w-full h-full">
+        <div className="relative w-full ">
           <MdMenu
-            className="w-10 min-w-[40px] h-10 min-h-[40px] cursor-pointer rounded-full"
+            className="text-3xl backdrop-blur-md absolute cursor-pointer right-0 rounded-full"
             onClick={() => setMenuOpen(true)}
           />
           {menuOpen && (
             <motion.div
+              //   onClick={() => setMenuOpen(false)}
               initial={{ opacity: 0, scale: 0.6 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.6 }}
-              className="w-40 bg-gray-50 shadow-xl flex flex-col rounded-lg absolute 
-              top-12 right-0"
+              className="w-2/4 backdrop-blur-[2px] px-6 py-5 flex flex-col absolute top-12 right-0 rounded-md"
             >
-              <ul className="flex flex-col px-4 ">
+              <ul className="flex flex-col gap-4 items-end ">
                 <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 
+                  className="text-base duration-100 
                     transition-all ease-in-out cursor-pointer"
+                  onClick={() => setMenuOpen(false)}
                 >
                   About
                 </li>
                 <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 
+                  className="text-base duration-100 
                     transition-all ease-in-out cursor-pointer"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Content
                 </li>
                 <li
-                  className="text-base text-textColor hover:text-headingColor duration-100 
+                  className="text-base duration-100 
                     transition-all ease-in-out cursor-pointer"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Prodact
                 </li>
-                <button>Download Demo</button>
+                <button
+                  className="text-sm font-archivo border-2 w-full h-[2rem] border-white rounded-md"
+                  type="button"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Download Demo
+                </button>
               </ul>
             </motion.div>
           )}

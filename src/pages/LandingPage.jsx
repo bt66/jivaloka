@@ -19,7 +19,7 @@ import Header from "../components/Header";
 function LandingPage() {
   return (
     <div className="flex flex-col w-[100vw] h-auto min-h-[100vh]">
-      {/* <Header /> */}
+      <Header />
       <div>
         <video
           autoPlay={true}
