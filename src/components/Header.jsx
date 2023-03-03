@@ -8,7 +8,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-50 md:p-5 xs:p-2 w-[100vw] items-center text-white">
+    <header className="fixed z-50 lg:p-5 md:p-3 xs:p-2 w-[100vw] items-center text-white">
       {/* destop & table */}
       <div className="hidden md:flex w-full h-full items-center justify-between">
         <div className="flex w-full items-center justify-center gap-8">
@@ -16,7 +16,7 @@ function Header() {
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className="flex items-center gap-16"
+            className="flex items-center lg:gap-16 md:gap-8"
           >
             <li
               className="text-base duration-100 hover:font-semibold
@@ -36,7 +36,7 @@ function Header() {
             >
               Prodact
             </li>
-            <button className="absolute right-[4rem] font-archivo border-2 w-[10rem] h-[2.5rem] border-white rounded-md">
+            <button className="absolute lg:right-[4rem] md:right-[2rem] font-archivo border-2 w-[10rem] lg:h-[2.5rem] md:h-[2rem] border-white rounded-md">
               Download Demo
             </button>
           </motion.ul>
@@ -47,7 +47,7 @@ function Header() {
       <div className="flex md:hidden items-center justify-between w-full h-full">
         <div className="relative w-full ">
           <MdMenu
-            className="text-3xl backdrop-blur-md absolute cursor-pointer right-0 rounded-full"
+            className="text-3xl backdrop-blur-sm absolute cursor-pointer right-0 rounded-full"
             onClick={() => setMenuOpen(true)}
           />
           {menuOpen && (
