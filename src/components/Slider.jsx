@@ -1,20 +1,21 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./slider.css";
-
-// import required modules
-import { Pagination, Navigation } from "swiper";
+// assets
+import img1 from "../assets/image/smkn2one.png";
+import img2 from "../assets/image/smkn2two.png";
+import img3 from "../assets/image/smkn2tree.png";
 
 function Slider() {
   return (
-    <div>
+    <div className="flex bg-cover text-white items-center w-full h-full">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -22,19 +23,23 @@ function Slider() {
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Pagination, Navigation, Autoplay]}
+        className="flex items-center justify-center"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <img src={img1} alt="smkn2mgl" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img2} alt="smkn2mgl" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={img3} alt="smkn2mgl" />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
