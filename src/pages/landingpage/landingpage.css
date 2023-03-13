@@ -1,0 +1,39 @@
+/* styled landingpage */
+@media screen and (min-width: 768px ) {
+   .video-bg {
+        width: 90%;
+        height: 90vh;
+        position: absolute;
+        z-index: 0;
+        left: 5% ;
+        top: 5rem;
+        object-fit: cover;
+    } 
+}
+
+
+@media screen and (max-width: 768px ) {
+    .video-bg {
+        /* display: flex; */
+        width: 90%;
+        height: 70vh;
+        /* align-items: center; */
+        left: 5% ;
+        top: 6rem;
+        position: absolute;
+        z-index: 0;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 315px ) {
+    .video-bg {
+        min-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        object-fit: cover;
+    }
+}

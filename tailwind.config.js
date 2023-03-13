@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  // plugins: ,
   theme: {
     extend: {
       screens: {
@@ -11,11 +12,13 @@ module.exports = {
         xl: "1280px",
         "2xl": "1536px",
       },
-
+      animation: {
+        "spin-slow": "spin 2s linear infinite",
+      },
       fontFamily: {
         archivo: "Archivo",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
