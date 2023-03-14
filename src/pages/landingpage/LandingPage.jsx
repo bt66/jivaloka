@@ -1,16 +1,18 @@
 import React from "react";
 import "./landingpage.css";
+import Slider from "../../components/Slider.jsx";
 
 // asset
 import bgVideo from "../../assets/videos/bg.mp4";
 import mgl1 from "../../assets/image/smkn2one.png";
 import iconjvlk from "../../assets/image/iconjvlk.png";
-import bgLP from "../../assets/image/bgLP.svg";
+import bgLP from "../../assets/image/ornamen.png";
 import floo from "../../assets/image/vdvr.png";
 import cyberMantra from "../../assets/image/cybermantra.svg";
 import ue1 from "../../assets/image/ue.svg";
 import katVr from "../../assets/image/katvr.svg";
 import mejik1 from "../../assets/image/mejik.svg";
+import katvrvideo from "../../assets/videos/katVRexprerience.mp4"
 // import logoJivaloka from "../../assets/image/jivalokalogo.svg";
 
 //component
@@ -81,10 +83,8 @@ const LandingPage = () => {
             <div className="flex flex-col gap-6 items-start bg-black rounded-2xl py-14 px-14">
               <h2 className="text-3xl font-medium">Jivaloka Pendopo</h2>
               <p className="text-lg">
-                Lorem ipsum dolor sit amet consectetur. Blandit in vitae urna ac
-                in fames arcu. Lectus et urna id malesuada adipiscing. Augue
-                aliquet feugiat neque nunc enim quis sed. Netus tortor semper
-                tortor elit.
+              Twin world developers created immersive virtual environtments for socializing,
+               gaming, and commerce specialize in niche or unique virtual spaces.
               </p>
               <button className="rounded-full border-2 px-6 py-2 mt-4">
                 Play Now
@@ -96,21 +96,31 @@ const LandingPage = () => {
         <h2 className="text-3xl font-semibold mt-[8rem] z-0">Latest Project</h2>
 
         <div className="w-[98%] h-full z-0">
-          <div className="bg-black w-[30%] rounded-xl h-[70vh]"></div>
+
+        <Slider />
+
         </div>
 
-        <div className="w-[95%] h-2 bg-white z-0"></div>
+        <div className="w-[95%] h-2 bg-white z-0 "></div>
 
-        <h2 className="text-3xl font-semibold mt-[8rem] z-0">Latest Work</h2>
+        <h2 className="text-3xl font-semibold mt-[8rem] z-0 mt-80">Latest Work</h2>
 
         <div
-          className=" w-[100%] h-full z-0"
+          className=" w-[100%] h-full z-0 "
           // style={{ backgroundImage: `url(${bgLP})` }}
         >
+          <div className="flex justify-end">
           <img src={bgLP} alt="" />
+          </div>
           <div className="flex flex-row px-[10rem] justify-around mt-[-50rem]">
-            <img src={floo} alt="" />
-
+          <video
+        autoPlay={true}
+        loop
+        muted
+        src={katvrvideo}
+        type="video/mp4"
+        style={{ width: '725px', height: '680px'}}
+      />
             <div className="flex flex-col gap-6 w-[30%]">
               <h2 className="text-3xl font-semibold mt-[8rem] z-0">
                 KAT VR Experience
@@ -126,9 +136,9 @@ const LandingPage = () => {
                 athlete, or an adventurer, Kat VR is your go-to source for
                 cutting-edge virtual reality technology.
               </p>
-              <button className="rounded-full border-2 px-6 py-2 mt-4 w-[50%]">
+              {/* <button className="rounded-full border-2 px-6 py-2 mt-4 w-[50%]">
                 More Info
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

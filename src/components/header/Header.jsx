@@ -49,9 +49,9 @@ function Header() {
             <li className="text-base duration-100 hover:font-semibold   transition-all ease-in-out cursor-pointer">
               Product
             </li>
-            <li className="text-base duration-100 hover:font-semibold  transition-all ease-in-out cursor-pointer">
+            {/* <li className="text-base duration-100 hover:font-semibold  transition-all ease-in-out cursor-pointer">
               Project
-            </li>
+            </li> */}
             <li className="text-base duration-100 hover:font-semibold  transition-all ease-in-out cursor-pointer">
               Gallery
             </li>

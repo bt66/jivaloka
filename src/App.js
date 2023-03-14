@@ -28,7 +28,7 @@ function App() {
         alt=""
       />
       <img src={ornam1} className="absolute bg-cover top-[110rem]" alt="" />
-
+    
       <LandingPage />
       <Footer />
     </div>
